@@ -1,0 +1,19 @@
+.land-body {
+    width: 100%;
+    height: 100%;
+}
+
+.land-head {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-content: center;
+    /* background-image: linear-gradient(to bottom, #A55193, #5C3C88); */
+    background-image: url('../../../assets/landing.png');
+}
+
+.land-title {
+    font-size: 9rem;
+    color: azure;
+    z-index: 200;
+}

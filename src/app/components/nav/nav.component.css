@@ -8,6 +8,8 @@
 
 .nav-title{
     padding-left: 10px;
+    color: azure;
+    
 }
 
 .nav-links{
@@ -29,6 +31,7 @@
     border-radius: 15px;
     width: 100px;
     padding: 3px;
+    color: azure;
 }
 
 .nav-link:nth-child(2){
