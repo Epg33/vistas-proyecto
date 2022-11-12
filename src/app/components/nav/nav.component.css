@@ -1,0 +1,37 @@
+.nav {
+    padding: .5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+}
+
+.nav-title{
+    padding-left: 10px;
+}
+
+.nav-links{
+    
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.nav-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #111;
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 100px;
+    padding: 3px;
+}
+
+.nav-link:nth-child(2){
+    background-color:#4533B4;
+    color: #eee;
+}
