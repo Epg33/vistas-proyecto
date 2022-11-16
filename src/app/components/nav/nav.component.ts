@@ -1,32 +1,46 @@
 import { Component, OnInit } from '@angular/core';
-// import { trigger, state, style, animate, transition } from '@angular/animations'
+import { trigger, state, style, animate, transition } from '@angular/animations'
 
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.css'],
-  // animations: [
-  //   state('open', style({
-  //     height: '200px',
-  //     opacity: 1,
-  //     backgroundColor: 'yellow'
-  //   })),
-  //   state('closed', style({
-  //     height: '100px',
-  //     opacity: 0.8,
-  //     backgroundColor: 'blue'
-  //   })),
-  // ]
+  animations: [
+    trigger('back', [
+      state('clear', style({
+        backgroundColor: 'rgba(48, 47, 47, 0.37)',
+        color: '#eee'
+      })),
+      state('dark', style({
+        backgroundColor: 'transparent',
+        color: '#111'
+      })),
+      transition('clear => dark', [
+        animate('1s'),
+      ]),
+      transition('dark => clear', [
+        animate('1s'),
+      ])
+    ])
+  ]
 })
 
 
-export class NavComponent implements OnInit {
+export class NavComponent{
 
+  back = false;
+  title:any = document.getElementById('nav-title');
 
-
-  constructor() {
-
+  theBack () {
+    if(window.scrollY> 20){
+      this.back = true;
+    }
+    else {
+      this.back = false
+    }
   }
+
+  constructor() {}
 
   ngOnInit(): void {
   }
