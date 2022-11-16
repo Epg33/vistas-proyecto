@@ -66,5 +66,26 @@
 }
 .check{
     font-size: 1rem;
-    color: rgb(0, 0, 0);
+    color :rgb(14, 1, 1);
 }
+.icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+.fa-facebook{
+    font-size: 3.5rem;
+    color: #333;
+  }
+  .fa-google-plus{
+    font-size: 3.5rem;
+    color: rgb(0, 38, 255);
+  }
+  .fa-instagram{
+    font-size: 3.5rem;
+    color: #333 ;
+  }
+  h4{
+    font-size: 1.2rem;
+  }
