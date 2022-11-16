@@ -59,6 +59,13 @@
     border-radius: 20px;
     box-shadow: 0px 5px 10px;
 }
+.button-box:active{
+    box-shadow: 0px 6px 11px;
+    transform: translateY(5px);
+    transition: all .1s ease-out;
+    color: aqua;
+    
+}
 .checkbox{
     height: 1rem;
     width: 1rem;
