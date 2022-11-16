@@ -1,33 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono&display=swap');
+
+*{
+  font-family: 'Sono', sans-serif;
+}
+
 .land-body {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .land-head {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    place-content: center;
-    /* background-image: linear-gradient(to bottom, #A55193, #5C3C88); */
-    background-image: url('../../../assets/landing.png');
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-content: center;
+  /* background-image: linear-gradient(to bottom, #A55193, #5C3C88); */
+  background-image: url('../../../assets/landing.png');
 }
 
 .land-title {
-    font-size: 9rem;
-    color: azure;
-    z-index: 200;
+  font-size: 9rem;
+  color: azure;
+  z-index: 200;
 }
 
 .body-land {
   height: 150vh;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0 0 10px;
+  gap: 6%;
+  background-color: #282A3A;
+  color: #eee;
 }
 
 .hacer {
+  width: 60%;
   display: flex;
-  left: 500px;
+  gap: 2%;
+  border-radius: 10px;
+  box-shadow: 1px 15px 23px 12px rgba(26, 25, 25, 0.842)
+}
+
+.hacer:nth-child(2){
+  margin-left: 39%;
+}
+
+.card-des {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+  padding-top: 4%;
 }
 
 .inte {
   width: 20vw;
   height: auto;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.inte:nth-child(2) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.body-land .hacer .card-des h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.body-land .hacer .card-des p {
+  width: 95%;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: justify;
+  line-height: 25px;
+}
+
+.card-pq {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+  padding-top: 4%;
+}
+
+.body-land .hacer .card-pq h4 {
+  text-align: right;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.body-land .hacer .card-pq p {
+  padding-left: 5%;
+  width: 95%;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: justify;
+  line-height: 25px;
 }

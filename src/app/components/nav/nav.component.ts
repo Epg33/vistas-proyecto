@@ -32,7 +32,7 @@ export class NavComponent{
 
   theBack () {
 
-    if(window.scrollY> 926){
+    if(window.scrollY> window.innerHeight*0.94){
       this.back = true;
     }
     else {
