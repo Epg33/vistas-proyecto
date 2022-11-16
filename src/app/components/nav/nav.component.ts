@@ -11,7 +11,8 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
         backgroundColor: 'transparent',
       })),
       state('dark', style({
-        backgroundColor: 'rgba(48, 47, 47, 0.67)',
+        backgroundColor: 'rgba(20, 20, 20, 0.95)',
+        zIndex: '20000',
         color: '#eff'
       })),
       transition('clear => dark', [
