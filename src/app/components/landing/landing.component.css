@@ -57,6 +57,16 @@
 .inte {
   width: 20vw;
   height: auto;
+
+  border: 1px solid black;
+}
+.card-des{
+  border: 1px solid black;
+  width: 20%;
+  box-shadow: 0px 0px 10px 0px;
+  padding-left: .12rem;
+  color: blue;
+
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
@@ -102,4 +112,5 @@
   font-weight: 400;
   text-align: justify;
   line-height: 25px;
+
 }
