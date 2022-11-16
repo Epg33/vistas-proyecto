@@ -1,0 +1,70 @@
+.main{
+    background-image: url("../../../assets/registro.png");
+    height: 100%;
+    width: 100%;
+}
+.container-register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+}
+.register{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 45rem;
+    width: 25rem;
+    border: 1px solid black;
+    border-radius: 15px;
+    background: rgb(251, 156, 63);
+    background: linear-gradient(180deg,rgba(251, 156, 63, 1) 0%,rgba(116, 70, 252, 1) 100% );
+
+}
+.h2sign{
+    font-family: revert;
+    font-size: 3rem;
+}
+.email-box{
+    height: 2.5rem;
+    width: 60%;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px;
+    padding-left: 9px;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+.password-box{
+    height: 2.5rem;
+    width: 60%;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px;
+    padding-left: 9px;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+.password{
+    height: 2.5rem;
+    width: 60%;
+    border-radius: 20px;
+    box-shadow: 0px 6px 10px;
+    padding-left: 9px;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+.button-box{
+    height: 3rem;
+    width: 70%;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px;
+}
+.checkbox{
+    height: 1rem;
+    width: 1rem;
+    border-radius: 10px;
+}
+.check{
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+}
