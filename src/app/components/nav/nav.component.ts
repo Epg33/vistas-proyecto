@@ -8,18 +8,17 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
   animations: [
     trigger('back', [
       state('clear', style({
-        backgroundColor: 'rgba(48, 47, 47, 0.37)',
-        color: '#eee'
+        backgroundColor: 'transparent',
       })),
       state('dark', style({
-        backgroundColor: 'transparent',
-        color: '#111'
+        backgroundColor: 'rgba(48, 47, 47, 0.67)',
+        color: '#eff'
       })),
       transition('clear => dark', [
-        animate('1s'),
+        animate('.3s'),
       ]),
       transition('dark => clear', [
-        animate('1s'),
+        animate('.3s'),
       ])
     ])
   ]
@@ -32,7 +31,8 @@ export class NavComponent{
   title:any = document.getElementById('nav-title');
 
   theBack () {
-    if(window.scrollY> 20){
+
+    if(window.scrollY> 926){
       this.back = true;
     }
     else {

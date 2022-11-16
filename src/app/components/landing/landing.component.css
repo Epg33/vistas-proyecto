@@ -18,6 +18,16 @@
     z-index: 200;
 }
 
-.hacer {
+.body-land {
   height: 150vh;
+}
+
+.hacer {
+  display: flex;
+  left: 500px;
+}
+
+.inte {
+  width: 20vw;
+  height: auto;
 }
