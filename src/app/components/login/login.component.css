@@ -1,56 +1,102 @@
-.main{
-    background-image: url("./../../../assets/login.png") ;
-    height: 100%;
-    width: 100%;
+.main {
+  background-image: url("./../../../assets/login.png");
+  height: 100%;
+  width: 100%;
 }
-.container-login{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10%;
-    
-}
-.login{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    border: 1px solid black;
-    height: 35rem;
-    width: 35rem;
-    border-radius: 15px;
-    background: rgb(251,156,63);
-    background: linear-gradient(180deg, rgba(251,156,63,1) 0%, rgba(116,70,252,1) 100%);
-    box-shadow: 0px 0px 10px ;
+.container-login {
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10%;
+  transition: all;
 }
 
-.name:nth-child(2){
-    height: 2.5rem;
-    width: 50%;
-    border-radius: 7px;    
+.login {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid black;
+  height: 45rem;
+  width: 40rem;
+  border-radius: 15px;
+  background: rgb(251, 156, 63);
+  background: linear-gradient(180deg,rgba(251, 156, 63, 1) 0%,rgba(116, 70, 252, 1) 100% );
+  box-shadow: 0px 0px 10px;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
 }
-.name:nth-child(3){
-    height: 2.5rem;
-    width: 50%;
-    border-radius: 7px;
+.login h2{
+  font-size: 1.6rem;
 }
-.name:nth-child(4){
-    color: #fff;
+.email-box{
+  height: 2.5rem;
+  width: 50%;
+  border-radius: 7px;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  margin-left: .2px;
 }
-.name:nth-child(5){
-    background-color:rgb(255, 255, 255);
-    border: 1px solid black;
-    border-radius: 15px;
-    height: 8%;
-    width: 45%;
-    box-shadow: 0px 5px 7px 3px rgb(153, 43, 226) ;
+.email-box::placeholder{
+  padding-left: 10px;
 }
-.name:nth-child(5):hover{
-    background-color: #fff;
+.password-box {
+  height: 2.5rem;
+  width: 50%;
+  border-radius: 7px;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  text-transform: uppercase;
 }
-.name:nth-child(5):active{
-    background-color: orangered;
-    transform: translateY(3px);
-    box-shadow: 0px 3px 7px 3px;
+.password-box::placeholder{
+  padding-left: 10px;
+}
+.forgot-box {
+  color: #fff;
+}
+.login-button {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+  border-radius: 15px;
+  height: 8%;
+  width: 45%;
+  box-shadow: 0px 5px 7px 3px rgb(153, 43, 226);
+}
+.login-button:hover {
+  background-color: #fff;
+}
+.login-button:active {
+  background-color: orangered;
+  transform: translateY(3px);
+  box-shadow: 0px 3px 7px 3px;
+}
+.icons{
+  display: flex;
+  height: 10%;
+  width: 50%;
+  justify-content: space-around;
+  align-items: center;
+}
+.fa-facebook{
+  font-size: 3.5rem;
+  color: #333;
+}
+.fa-google-plus{
+  font-size: 3.5rem;
+  color: rgb(0, 38, 255);
+}
+.fa-instagram{
+  font-size: 3.5rem;
+  color: #333 ;
+}
+.login p{
+  color: rgb(0, 255, 255);
+  font-family: monospace;
+  font-size: 1.3rem;
+}
+.login h3{
+  color: azure;
+  font-family: monospace;
+
 }
