@@ -27,12 +27,12 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 
 export class NavComponent{
 
-  back = false;
+  back:boolean = false;
   title:any = document.getElementById('nav-title');
 
   theBack () {
 
-    if(window.scrollY> window.innerHeight*0.94){
+    if(window.scrollY> window.innerHeight*0.85){
       this.back = true;
     }
     else {
