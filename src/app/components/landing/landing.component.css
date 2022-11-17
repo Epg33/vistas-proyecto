@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Sono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital@1&display=swap');
 
 *{
   font-family: 'Sono', sans-serif;
@@ -109,7 +110,7 @@
 }
 
 .testimonios {
-  height: 100vh;
+  height: 140vh;
   background-color: #282A3A;
   display: grid;
   padding-left: 15%;
@@ -118,11 +119,12 @@
 }
 
 .testi{
-  background-color: red;
+  background: linear-gradient(180deg,rgba(251, 156, 63, 1) 0%,rgba(116, 70, 252, 1) 100% );
   width:50%;
   height: 90%;
   border-radius: 15px;
   text-align: center;
+  font-family: 'Source Code Pro', monospace;
 }
 .icon{
   display: flex;
@@ -130,9 +132,69 @@
 
 }
 .fa-circle-user{
-  font-size: 8rem;
-  transform: translateY(-8vh);
+  font-size: 9rem;
+  transform: translateY(-7vh);
   border: 9px solid #eee;
   border-radius: 9999px;
   background-color: #eee;
+  z-index: 1000;
+}
+
+.icon::after {
+  content: '';
+  position: absolute;
+  transform: translateY(-8vh);
+  z-index: 1;
+  height: 10rem;
+  width: 10rem;
+  border: 15px solid #282A3A;
+  border-radius: 9999px;
+  background-color: #282A3A;
+}
+
+.info {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.card-descri{
+  height: 80%;
+  font-family: 'Source Code Pro', monospace;
+}
+.p2{
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.social-n {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.fa-facebook{
+  font-size: 3.5rem;
+  color: #eee;
+  transition: all .5s ease;
+}
+.fa-facebook:hover, .fa-google-plus:hover, .fa-instagram:hover{
+  transform: translateY(-15px);
+}
+.fa-google-plus{
+  font-size: 3.5rem;
+  color: #eee;
+  transition: all .5s ease;
+}
+.fa-instagram{
+  font-size: 3.5rem;
+  color: #eee;
+  transition: all .5s ease;
 }
