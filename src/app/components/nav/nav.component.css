@@ -1,5 +1,5 @@
 .nav {
-  padding: .5%;
+  padding: .8%;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -8,6 +8,7 @@
 }
 
 .nav-title {
+  text-decoration: none;
   padding-left: 10px;
   color: azure;
   mix-blend-mode: difference;
@@ -29,14 +30,23 @@
   align-items: center;
   text-decoration: none;
   color: #111;
-  border: 1px solid black;
   border-radius: 15px;
   width: 100px;
   padding: 3px;
   color: azure;
+  transition: all .5s ease;
 }
 
+.nav-link:hover {
+  transform: translateY(-8px);
+  box-shadow: 1px 8px 15px 8px rgba(26, 25, 25, 0.442);
+}
+.nav-link:nth-child(2):hover {
+  transform: translateY(-8px);
+  box-shadow: 1px 8px 15px 8px rgba(11, 1, 150, 0.442);
+}
 .nav-link:nth-child(2) {
   background-color: #4533B4;
+
   color: #eee;
 }

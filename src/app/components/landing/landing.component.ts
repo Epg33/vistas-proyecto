@@ -10,8 +10,7 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
     trigger('view', [
       state('in', style({
         opacity: '1',
-        transform: 'translateY(-3vh)'
-
+        transform: 'translateY(0vh)'
       })),
       state('out', style({
         opacity: '0.2',
@@ -31,11 +30,8 @@ export class LandingComponent implements OnInit {
   move:boolean = false;
 
   sight(){
-    if(window.scrollY > window.innerHeight*0.85){
+    if(window.scrollY > window.innerHeight*0.70){
       this.move = true;
-    }
-    else {
-      this.move = false
     }
   }
 

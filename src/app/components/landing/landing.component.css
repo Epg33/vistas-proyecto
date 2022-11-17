@@ -14,7 +14,6 @@
   height: 100%;
   display: grid;
   place-content: center;
-  /* background-image: linear-gradient(to bottom, #A55193, #5C3C88); */
   background-image: url('../../../assets/landing.png');
 }
 
@@ -25,7 +24,7 @@
 }
 
 .body-land {
-  height: 150vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   padding: 30px 0 0 10px;
@@ -107,4 +106,33 @@
   text-align: justify;
   line-height: 25px;
 
+}
+
+.testimonios {
+  height: 100vh;
+  background-color: #282A3A;
+  display: grid;
+  padding-left: 15%;
+  grid-template-columns: 2fr 2fr;
+  gap: 10%;
+}
+
+.testi{
+  background-color: red;
+  width:50%;
+  height: 90%;
+  border-radius: 15px;
+  text-align: center;
+}
+.icon{
+  display: flex;
+  justify-content: center;
+
+}
+.fa-circle-user{
+  font-size: 8rem;
+  transform: translateY(-8vh);
+  border: 9px solid #eee;
+  border-radius: 9999px;
+  background-color: #eee;
 }
