@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital@1&display=swap');
 
-*{
+* {
   font-family: 'Sono', sans-serif;
 }
 
@@ -42,7 +42,7 @@
   box-shadow: 1px 15px 23px 12px rgba(26, 25, 25, 0.842)
 }
 
-.hacer:nth-child(2){
+.hacer:nth-child(2) {
   margin-left: 39%;
 }
 
@@ -61,7 +61,8 @@
   border-bottom-left-radius: 10px;
   border: 1px solid black;
 }
-.card-des{
+
+.card-des {
   padding-left: .12rem;
 }
 
@@ -118,20 +119,21 @@
   gap: 10%;
 }
 
-.testi{
-  background: linear-gradient(180deg,rgba(251, 156, 63, 1) 0%,rgba(116, 70, 252, 1) 100% );
-  width:50%;
+.testi {
+  background: linear-gradient(180deg, rgba(251, 156, 63, 1) 0%, rgba(116, 70, 252, 1) 100%);
+  width: 50%;
   height: 90%;
   border-radius: 15px;
   text-align: center;
   font-family: 'Source Code Pro', monospace;
 }
-.icon{
+
+.icon {
   display: flex;
   justify-content: center;
-
 }
-.fa-circle-user{
+
+.fa-circle-user {
   font-size: 9rem;
   transform: translateY(-7vh);
   border: 9px solid #eee;
@@ -160,11 +162,12 @@
   font-family: 'Source Code Pro', monospace;
 }
 
-.card-descri{
+.card-descri {
   height: 80%;
   font-family: 'Source Code Pro', monospace;
 }
-.p2{
+
+.p2 {
   height: 4rem;
   display: flex;
   justify-content: center;
@@ -180,20 +183,23 @@
   justify-content: space-evenly;
 }
 
-.fa-facebook{
+.fa-facebook {
   font-size: 3.5rem;
   color: #eee;
   transition: all .5s ease;
 }
-.fa-facebook:hover, .fa-google-plus:hover, .fa-instagram:hover{
+
+.fa-facebook:hover, .fa-google-plus:hover, .fa-instagram:hover {
   transform: translateY(-15px);
 }
-.fa-google-plus{
+
+.fa-google-plus {
   font-size: 3.5rem;
   color: #eee;
   transition: all .5s ease;
 }
-.fa-instagram{
+
+.fa-instagram {
   font-size: 3.5rem;
   color: #eee;
   transition: all .5s ease;
