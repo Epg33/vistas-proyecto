@@ -25,6 +25,7 @@
 .h2sign{
     font-family: revert;
     font-size: 3rem;
+    text-shadow: 0px 6px 10px rgb(57, 51, 82);
 }
 .email-box{
     height: 2.5rem;
@@ -58,11 +59,15 @@
     width: 70%;
     border-radius: 20px;
     box-shadow: 0px 5px 10px;
+    transition: all .1s ease-out;
+}
+.button-box:hover{
+  transform: translateY(-7px);
+  box-shadow:0px 7px 10px rgb(30, 124, 167);
 }
 .button-box:active{
     box-shadow: 0px 6px 11px;
     transform: translateY(5px);
-    transition: all .1s ease-out;
     color: aqua;
 
 }
@@ -84,15 +89,38 @@
 .fa-facebook{
     font-size: 3.5rem;
     color: #333;
+    transition: all .5s;
   }
   .fa-google-plus{
     font-size: 3.5rem;
-    color: rgb(0, 38, 255);
+    color: #333;
+    transition: all .5s;
   }
   .fa-instagram{
     font-size: 3.5rem;
     color: #333 ;
+    transition: all .5s;
   }
   h4{
     font-size: 1.2rem;
   }
+.fa-facebook:hover, .fa-google-plus:hover, .fa-instagram:hover{
+  transform: translateY(-8px);
+
+}
+.fa-facebook:hover{
+  color: rgb(59, 107, 238);
+  background-color: #eee;
+  border-radius: 999px;
+  border: 0px;
+}
+.fa-google-plus:hover{
+  color: rgb(224, 42, 10);
+  background-color: #eee;
+  border-radius: 999px;
+}
+.fa-instagram:hover{
+  color:#eee;
+  background: linear-gradient(45deg, #ffae00, #b92727,#e24cc9);
+  border-radius: 999px;
+}

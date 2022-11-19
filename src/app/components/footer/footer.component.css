@@ -62,6 +62,7 @@ p {
   color: rgb(59, 107, 238);
   background-color: #eee;
   border-radius: 999px;
+  border: 0px;
 }
 
 .fa-google-plus:hover {
