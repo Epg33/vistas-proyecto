@@ -24,73 +24,21 @@
 </main>
 
 <article class="testimonios">
-  <div class="testi">
+  <div class="testi" *ngFor="let num of testimonios">
     <div class="icon">
       <i class="fa-solid fa-circle-user"></i>
     </div>
     <div class="info">
-      <h4>lorem</h4>
+      <h4>{{num.title}}</h4>
       <div>
-        <p class="card-descri">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis illo, impedit asperiores molestias rem consequuntur sunt obcaecati, a voluptatum facilis veniam optio dolores aspernatur maxime quaerat, debitis nulla dolore. Fuga.</p>
+        <p class="card-descri">{{num.description}}</p>
         <ul class="social-n">
           <a href=""><i class="fa-brands fa-facebook"></i></a>
           <a href=""><i class="fa-brands fa-google-plus"></i></a>
           <a href=""><i class="fa-brands fa-instagram"></i></a>
         </ul>
       </div>
-      <p class="p2">Lorem ipsum </p>
-    </div>
-  </div>
-  <div class="testi">
-    <div class="icon">
-      <i class="fa-solid fa-circle-user"></i>
-    </div>
-    <div class="info">
-      <h4>lorem</h4>
-      <div>
-        <p class="card-descri">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis illo, impedit asperiores molestias rem consequuntur sunt obcaecati, a voluptatum facilis veniam optio dolores aspernatur maxime quaerat, debitis nulla dolore. Fuga.</p>
-        <ul class="social-n">
-          <a href=""><i class="fa-brands fa-facebook"></i></a>
-          <a href=""><i class="fa-brands fa-google-plus"></i></a>
-          <a href=""><i class="fa-brands fa-instagram"></i></a>
-        </ul>
-      </div>
-      <p class="p2">Lorem ipsum </p>
-    </div>
-    <img src="" alt="" />
-  </div>
-  <div class="testi">
-    <div class="icon">
-      <i class="fa-solid fa-circle-user"></i>
-    </div>
-    <div class="info">
-      <h4>lorem</h4>
-      <div>
-        <p class="card-descri">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis illo, impedit asperiores molestias rem consequuntur sunt obcaecati, a voluptatum facilis veniam optio dolores aspernatur maxime quaerat, debitis nulla dolore. Fuga.</p>
-        <ul class="social-n">
-          <a href=""><i class="fa-brands fa-facebook"></i></a>
-          <a href=""><i class="fa-brands fa-google-plus"></i></a>
-          <a href=""><i class="fa-brands fa-instagram"></i></a>
-        </ul>
-      </div>
-      <p class="p2">Lorem ipsum </p>
-    </div>
-  </div>
-  <div class="testi">
-    <div class="icon">
-      <i class="fa-solid fa-circle-user"></i>
-    </div>
-    <div class="info">
-      <h4>lorem</h4>
-      <div>
-        <p class="card-descri">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis illo, impedit asperiores molestias rem consequuntur sunt obcaecati, a voluptatum facilis veniam optio dolores aspernatur maxime quaerat, debitis nulla dolore. Fuga.</p>
-        <ul class="social-n">
-          <a href=""><i class="fa-brands fa-facebook"></i></a>
-          <a href=""><i class="fa-brands fa-google-plus"></i></a>
-          <a href=""><i class="fa-brands fa-instagram"></i></a>
-        </ul>
-      </div>
-      <p class="p2">Lorem ipsum </p>
+      <p class="p2">{{num.name}}</p>
     </div>
   </div>
 

@@ -1,6 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations'
 
+interface Testimonio{
+  title: string,
+  description: string,
+  name: string
+}
 
 @Component({
   selector: 'app-landing',
@@ -26,6 +31,24 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
   ]
 })
 export class LandingComponent implements OnInit {
+
+  testimonios:Array<Testimonio> = [{
+    title: "lorem",
+    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis illo, impedit asperiores molestias rem consequuntur sunt obcaecati, a voluptatum facilis veniam optio dolores aspernatur maxime quaerat, debitis nulla dolore. Fuga.",
+    name: "Lorem ipsum"
+  },{
+    title: "lorem",
+    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis illo, impedit asperiores molestias rem consequuntur sunt obcaecati, a voluptatum facilis veniam optio dolores aspernatur maxime quaerat, debitis nulla dolore. Fuga.",
+    name: "Lorem ipsum"
+  },{
+    title: "lorem",
+    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis illo, impedit asperiores molestias rem consequuntur sunt obcaecati, a voluptatum facilis veniam optio dolores aspernatur maxime quaerat, debitis nulla dolore. Fuga.",
+    name: "Lorem ipsum"
+  },{
+    title: "lorem",
+    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis illo, impedit asperiores molestias rem consequuntur sunt obcaecati, a voluptatum facilis veniam optio dolores aspernatur maxime quaerat, debitis nulla dolore. Fuga.",
+    name: "Lorem ipsum"
+  }]
 
   move:boolean = false;
 
