@@ -1,7 +1,7 @@
 <nav class="nav" id="nav" [@back]="back ? 'dark' : 'clear'" (window:scroll)="theBack()">
-    <h2 class="nav-title" id="nav-title"  [style]=""><a class="nav-title" href="">NODENS</a></h2>
+    <h2 class="nav-title" id="nav-title"  [style]=""><a class="nav-title" [routerLink]="['/']">NODENS</a></h2>
     <div class="nav-links">
-        <a class="nav-link" href="login">Sign In <mat-icon>supervisor_account</mat-icon></a>
-        <a class="nav-link" href="registro">Sign Up <mat-icon>perm_identity</mat-icon></a>
+        <a class="nav-link" [routerLink]="['login']">Sign In <mat-icon>supervisor_account</mat-icon></a>
+        <a class="nav-link" [routerLink]="['registro']">Sign Up <mat-icon>perm_identity</mat-icon></a>
     </div>
 </nav>
